@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyHotSpotter</title>
+  	<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuN5NMA_84ek31vOL3n7G66138ySCYKPw&sensor=true">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <%= include_gon %>
+  <%= stylesheet_link_tag    "hotspots", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "hotspots", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "wall", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= yield :login %>
+<%= yield :home %>
+<%= yield :showspot %>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<%content_for :showspot do %>
+	<div class='wall_post'>
+		<h4 id='wall_title'><%= @showspot.name %></h4>
+		<p id='wall_description'><%= @showspot.description %></p>
+		<p id='wall_name'>~<%= @showspot.user.name %>~</p>
+		<p id='wall_date'><%= @showspot.created_at.to_time.strftime('%B %e at %l:%M %p') %> </p>
+	</div>
+<% end %>

@@ -1,0 +1,221 @@
+// Place all the styles related to the Hotspots controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap";
+
+body{
+	background: url(feet.jpg) no-repeat center center fixed;
+	background-size: cover;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#profile_pic{
+	width: 20%;
+	margin-right: 1.5%;
+}
+#right{
+	width: 50px;
+	display: inline-block;
+	padding-top: 1.8%;
+	margin-left: 4.5%;
+}
+
+#main_title{
+	font-size: 500%;
+	font-weight: bold;
+	margin-top:5px; margin-left: 7%;
+	text-align: center;
+	display: inline-block;
+	color: #0B0B3B;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+#login{
+	margin-top: 3%;
+}
+#login_title{
+	margin-top: 5px; margin-bottom: 0px;
+	font-size: 700%;
+	font-weight: bold;
+	color: #0B0B3B;
+	text-align: center;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+#user_name{
+	text-align: center;
+	width: 20%;
+}
+
+#head{
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: inline-block;
+	vertical-align: top;
+}
+#but{
+	display: inline-block;
+	background-color: transparent;
+	border-color: #0B0B3B;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-size: large;
+}
+#but:hover{
+	background-color: red;
+}
+h2{
+	color: #151515;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+#wall_mark{
+	color: #151515;
+	font-family: "Lucida Bright", Georgia, serif;
+	/*border-bottom: dashed;*/
+	border: dashed;
+	border-color: #151515;
+	border-width: 1px;
+	border-radius: 5px;
+	font-weight: bold;
+	padding-bottom: 3px;
+	text-align: center;
+}
+a.button{
+	width: 100px;
+	font-size: medium;
+	border:hidden;
+	border-radius: 5px;
+	background-color: #3B5998;
+	padding:8px;
+	color:white;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-weight: bold;
+}
+#map_div{
+	text-align: center;
+	height: 90%;
+	width: 75%;
+	border: hidden;
+	border-width: 1px;
+	border-color: darkblue;
+	border-radius: 5px;
+}
+span{
+	color: red;
+}
+#wall{
+	height: 625px;
+	margin-left: 15px;
+	border: hidden;
+	border-radius: 10px;
+	margin-top: 5px;
+	overflow: scroll;
+	padding: 5px;
+	text-align: center;
+}
+img{
+	width: 75px;
+	height:75px;
+	border: hidden;
+	border-radius: 5px;
+}
+img:hover{
+	cursor: pointer;
+	height:100px;
+	width: 100px;
+	transform: scale(2);
+}
+#body{
+	height:850px;
+}
+.MSDList{
+	float: relative;
+}
+
+#friend{
+	position:absolute;
+	margin-left: 82%;
+	margin-top: 2%;
+}
+#poster{
+	font-size: small;
+	font-weight: italic;
+	color: black;
+	margin-top: 0px;
+}
+#container{
+	text-align: center;
+}
+.container{
+	padding-top: 5%;
+	text-align: center;
+}
+#welcome{
+	font-size: 300%;
+	color: white;
+	font-family: "Lucida Bright", Georgia, serif;
+	text-align: center;
+	display: inline-block;
+}
+#view_poster{
+	font-weight: bold;
+}
+#view_date{
+	font-style: italic;
+	font-size: 80%;
+}
+#view_description{
+	padding-top: 5px;
+	font-size: 125%;
+}
+#view_info{
+	display: block;
+	background-color: #F2F2F2;
+	border: hidden;
+	border-radius: 5px;
+}
+.wall_post{
+	border:hidden;
+	border-radius: 5px;
+	border-width: 1px;
+	color: white;
+	background: url(red.png);
+	padding: 5px;
+	margin-bottom: 5px;
+}
+#wall_date{
+	font-size:75%;
+	font-style: italic;
+	color: white;
+	margin-bottom: 2px;
+	font-weight: bold;
+}
+#wall_name{
+	font-weight: bold;
+	font-size: 90%;
+	color: #A4A4A4;
+	margin-bottom: 0px;
+}
+#wall_description{
+	font-size: 100%;
+	color: white;
+	margin-bottom: 7px; margin-top: 7px;
+}
+#wall_title{
+	font-weight: bold;
+	color: red;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	margin-top: 2px; margin-bottom: 5px;
+}
+#pro_pic{
+	text-align: center;
+}
+#wel{
+	font-size: 75%;
+	color: white;
+	font-family: "Lucida Bright", Georgia, serif;
+}
+#header{
+	text-align: center;
+}
+#foot{
+	height: 1000px;
+}

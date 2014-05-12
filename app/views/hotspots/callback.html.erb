@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>MyHotSpotter</title>
+</head>
+<body>
+<%content_for :home do %>
+<div class='container-fluid'>
+	<div id='head_div' class="row"> <!-- Start of Head Div -->
+		<div id='user_name' class="col-xs-3 col-md-2">
+			<h2><span id='wel'>Welcome,</span><br><%= @name['name'] %></h2>
+		</div>
+		<div id='head' class="col-xs-6 col-md-8">
+			<h1 id='main_title'>My<span>Hot</span>Spotter</h1>
+		</div>
+		<div id='right' class="col-xs-3 col-md-2">
+			<a href="/"><button id='but' class="btn btn-danger">Logout</button></a>
+		</div>
+	</div> <!-- End of Head Div -->
+	<div id='body' class="row"> <!-- Start of Body Div -->
+		<div id='profile_pic' class="col-xs-3 col-md-2">
+			<div id='pro_pic'>
+				<img src="<%= @pic %>">
+			</div>
+			<h2 id ='wall_mark'>Recent Activity</h2>
+			<div id='wall'>
+				<% @hotspots.reverse.each do |hotspot| %>
+				<div class='wall_post'>
+					<h4 id='wall_title'><%= hotspot.name %></h4>
+					<p id='wall_description'><%= hotspot.description %></p>
+					<p id='wall_name'>~<%= hotspot.user.name %>~</p>
+					<p id='wall_date'><%= hotspot.created_at.to_time.strftime('%B %e at %l:%M %p') %> </p>
+				</div>
+				<% end %>
+			</div>
+		</div>
+		<div id="map_div" class="col-xs-9 col-md-10"> <!-- Start of Map Div-->
+			<!-- Map Div -->
+		</div><!-- End of Map Div-->
+	</div><!-- End of Body Div -->
+
+</div>
+<% end %>
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title><% @title="Home" %></title>
+
+</head>
+<body>
+<%content_for :login do %>
+	<div class='container'>
+		<div id='header' class="row"> <!-- Start of Head Div -->
+			<div class="col-xs-12 col-md-12">
+				<h2 id='welcome'>Welcome to </h2>
+				<h1 id='login_title'>My<span>Hot</span>Spotter</h1>
+				<div id='login'>
+					<%= link_to 'Login with Facebook', @auth_url, :class=>"button"%>
+				</div>
+			</div>
+		</div>
+		<div id='foot' class="row"> <!-- Start of Head Div -->
+			<div class="col-xs-12 col-md-12">
+			</div>
+		</div>
+<% end %>
+</body>
+</html>
